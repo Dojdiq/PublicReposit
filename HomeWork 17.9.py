@@ -10,7 +10,7 @@ try:
     else:
         print("Введите корректное число")
 except ValueError:
-    print("Не корректные данные.")
+    print("Некорректные данные.")
 
 def binary_search(at, user, left, right):
     try:
@@ -25,6 +25,5 @@ def binary_search(at, user, left, right):
             return binary_search(at, user, middle + 1, right)
     except IndexError:
         return "Число выходит за диапазон списка, введите меньшее число."
-
 
 print("Индекс введенного числа в списке: ", binary_search(at, user, 0, len(at) - 1))
